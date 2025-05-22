@@ -97,6 +97,11 @@ on:
         description: "是否启用KPM？"
         required: true
         default: true
+      SUFFIX:
+        type: string
+        description: "自定义内核后缀 (留空则使用随机字符串)"
+        required: false
+        default: ""
       ZRAM:
         type: boolean
         description: "是否启用添加更多的ZRAM算法？"
